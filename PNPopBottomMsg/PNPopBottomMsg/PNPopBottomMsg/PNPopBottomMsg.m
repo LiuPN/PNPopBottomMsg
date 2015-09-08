@@ -16,7 +16,7 @@
 
 
 /// 底部的弹框效果
-+ (void)popBottomViewWithMsg:(NSString *)msg fontColor:(UIColor *)fontColor inSuperView:(UIView *)superView superViewBgColor:(UIColor *)bgColor
++ (void)popBottomViewWithMsg:(NSString *)msg fontColor:(UIColor *)fontColor inSuperView:(UIView *)superView bgColor:(UIColor *)bgColor
 {
     // x中心坐标设置相对于父控件居中显示
    CGFloat centerX = superView.frame.size.width * 0.5;

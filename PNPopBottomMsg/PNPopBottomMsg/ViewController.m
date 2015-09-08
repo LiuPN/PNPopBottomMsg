@@ -27,7 +27,7 @@
 {
     
     
-    [PNPopBottomMsg popBottomViewWithMsg:@"这是底部弹窗弹出的文字" fontColor:[UIColor whiteColor] inSuperView:self.view superViewBgColor:[UIColor blackColor]];
+    [PNPopBottomMsg popBottomViewWithMsg:@"这是底部弹窗弹出的文字" fontColor:[UIColor whiteColor] inSuperView:self.view bgColor:[UIColor blackColor]];
 }
 
 - (void)didReceiveMemoryWarning {
