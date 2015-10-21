@@ -15,13 +15,10 @@
  
  参数解释：
     msg: 弹出的文字
- 
     fontColor: 弹出文字的颜色
-    superView: 弹出label的父控件
     bgColor: label的背景色
    
  
  */
-
-+ (void)popBottomViewWithMsg:(NSString *)msg fontColor:(UIColor *)fontColor inSuperView:(UIView *)superView bgColor:(UIColor *)bgColor;
++ (void)popBottomViewWithMsg:(NSString *)msg fontColor:(UIColor *)fontColor bgColor:(UIColor *)bgColor;
 @end

@@ -25,9 +25,8 @@
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    
-    
-    [PNPopBottomMsg popBottomViewWithMsg:@"这是底部弹窗弹出的文字" fontColor:[UIColor whiteColor] inSuperView:self.view bgColor:[UIColor blackColor]];
+    // 文字白色  label是黑色
+    [PNPopBottomMsg popBottomViewWithMsg:@"这是底部弹窗弹出的文字" fontColor:[UIColor whiteColor] bgColor:[UIColor blackColor]];
 }
 
 - (void)didReceiveMemoryWarning {

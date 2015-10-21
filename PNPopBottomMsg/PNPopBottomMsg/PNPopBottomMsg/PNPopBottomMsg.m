@@ -16,12 +16,13 @@
 
 
 /// 底部的弹框效果
-+ (void)popBottomViewWithMsg:(NSString *)msg fontColor:(UIColor *)fontColor inSuperView:(UIView *)superView bgColor:(UIColor *)bgColor
++ (void)popBottomViewWithMsg:(NSString *)msg fontColor:(UIColor *)fontColor bgColor:(UIColor *)bgColor
 {
-    // x中心坐标设置相对于父控件居中显示
+    // x中心坐标设置相对于父控件居中显示   此提示也在键盘的上层
+    UIView *superView = [[[UIApplication sharedApplication] windows] lastObject];
    CGFloat centerX = superView.frame.size.width * 0.5;
     
-    // 算出字的大小
+    // 算出字的大小 [20-文字-20]
    CGFloat maxWidth = superView.frame.size.width - (2 * margin);
    CGSize size =  [self sizeWithText:msg font:[UIFont systemFontOfSize:14.0] maxSize:CGSizeMake(maxWidth, MAXFLOAT)];
     
