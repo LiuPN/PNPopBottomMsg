@@ -22,6 +22,7 @@
     bottomView.backgroundColor = [UIColor lightGrayColor];
     self.bottomView = bottomView;
     [self.view addSubview:bottomView];
+    
 }
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
